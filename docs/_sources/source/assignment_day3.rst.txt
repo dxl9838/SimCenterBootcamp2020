@@ -1,5 +1,5 @@
-Assignments for Day 3
-===============
+Python: Assignments Day 3
+=========================
 
 .. note::
 
@@ -24,11 +24,24 @@ Self-study portion for day 3 (ahead of class)
 Live exercises (in class)
 --------
 
+* ``LessonNotes/Lesson  05-File IO.ipynb``
+* ``LessonNotes/Lesson  06-Introduction to Object Oriented Programming.ipynb``
+* ``LessonNotes/Lesson  07-Inheritance (OOP 2).ipynb``
 
 Practice problems (after class)
 ---------
 
+* ``./HomeworkExercises/04.1 Exercise File handling.ipynb``
+* ``./HomeworkExercises/05.1 Exercise Classes.ipynb``
+* ``./HomeworkExercises/06.3 Exercise Inheritance.ipynb``
+
 
 Self-study portion for day 4 (watch before tomorrow's class)
 -----------
+
+* watch the introduction to Machine Learning video. This takes :green:`~1 hour`.
+
+.. raw:: html
+
+   <p><iframe width="560" height="315" src="https://www.youtube.com/embed/JuWQmyGzEG0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 
