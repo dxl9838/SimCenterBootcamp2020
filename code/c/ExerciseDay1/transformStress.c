@@ -8,4 +8,40 @@
 // output transformed stresses: sigmaX', sigmaY', tauXY'
 //
 // NOTE: perform the transformation inside a function that cannot be named main
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
 
+void tranStress(float sigmaX,float sigmaY,float tauXY,float theta,float *sigmaXTa,float *sigmaYTa,float *tauXYTa);
+int main (int argc, char **argv) {
+	if (argc != 5) {
+		printf("need 5 arguments");
+		exit(-1);
+	}
+	float sigmaX=atof(argv[1]);
+	float sigmaY=atof(argv[2]);
+	float tauXY=atof(argv[3]);
+	float theta=atof(argv[4]);
+        
+//	float sX=0;
+//	float sY=0;
+//	float tXY=0;
+//	float *sigmaXT=&sX;
+//	float *sigmaYT=&sY;
+//	float *tauXYT=&tXY;
+//
+//	tranStress(sigmaX,sigmaY,tauXY,theta,sigmaXT,sigmaYT,tauXYT);
+//	printf("transformed stresses are %f %f %f\n",*sigmaXT,*sigmaYT,*tauXYT);
+	float sigmaXT=0;
+	float sigmaYT=0;
+	float tauXYT=0;
+
+	tranStress(sigmaX,sigmaY,tauXY,theta,&sigmaXT,&sigmaYT,&tauXYT);
+        printf("transformed stresses are %f %f %f\n",sigmaXT,sigmaYT,tauXYT);
+return 0;	
+}
+void tranStress(float sigmaX,float sigmaY,float tauXY,float theta,float * sigmaXTa,float * sigmaYTa,float *tauXYTa) {
+*sigmaXTa=sigmaX*cos(theta)*cos(theta)+sigmaY*sin(theta)*sin(theta);
+*sigmaYTa=sigmaX*sin(theta)*sin(theta);
+*tauXYTa=(sigmaX-sigmaY);
+}

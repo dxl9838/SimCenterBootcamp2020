@@ -20,7 +20,15 @@ int main(int argc, char **argv) {
   float a = atof(argv[1]);
   float b = atof(argv[2]);
   float c = atof(argv[3]);
-
+  float delta;
+  delta=pow(b,2)-4.0*a*c;
+  if (delta<0.0) {
+     printf("delta must be positive");
+} else {
+  float soln1=-b/2.0/a+sqrt(delta)/2.0/a;
+  float soln2=-b/2.0/a-sqrt(delta)/2.0/a;
+  printf("solutions are %f %f\n",soln1,soln2);
+}
   printf("Have a Nice Day!\n");
   return 0;
 }
