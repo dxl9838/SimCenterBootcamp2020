@@ -9,17 +9,16 @@ static long int numSteps = 1000000000;
 int main() {
   // perform calculation
   double piFinal=0;
+  double dx=1./numSteps;
   #pragma omp parallel reduction(+:piFinal)
   {
      int tid=omp_get_thread_num();
      int numT=omp_get_num_threads();
   
      double pi   = 0;
-     double dx = 1./numSteps;
-     double x  = dx*0.50;
      for (int i=tid; i<numSteps; i+=numT) {
+        double x=(i+0.5)*dx;
         pi += 4./(1.+x*x);
-        x =(i+0.5)*dx;
      } 
      pi *= dx;
   
