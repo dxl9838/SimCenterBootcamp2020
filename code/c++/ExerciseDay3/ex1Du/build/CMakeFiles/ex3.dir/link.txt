@@ -1,0 +1,1 @@
+/bin/c++    -rdynamic CMakeFiles/ex3.dir/main3.cpp.o  -o ex3  libShapeLib.a 

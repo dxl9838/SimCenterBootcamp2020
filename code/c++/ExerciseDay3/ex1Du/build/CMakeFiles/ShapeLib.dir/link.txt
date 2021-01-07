@@ -1,0 +1,2 @@
+/bin/ar qc libShapeLib.a  CMakeFiles/ShapeLib.dir/ColoredShape.cpp.o CMakeFiles/ShapeLib.dir/Rectangle.cpp.o CMakeFiles/ShapeLib.dir/Circle.cpp.o CMakeFiles/ShapeLib.dir/Triangle.cpp.o
+/bin/ranlib libShapeLib.a

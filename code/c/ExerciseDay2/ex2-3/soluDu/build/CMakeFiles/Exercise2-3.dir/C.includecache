@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home1/06631/dxl9838/SimCenterBootcamp2020/code/c/ExerciseDay2/ex2-3/soluDu/exercise2-3.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+stresstransform.h
+/home1/06631/dxl9838/SimCenterBootcamp2020/code/c/ExerciseDay2/ex2-3/soluDu/stresstransform.h
+
+/home1/06631/dxl9838/SimCenterBootcamp2020/code/c/ExerciseDay2/ex2-3/soluDu/stresstransform.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+stresstransform.h
+/home1/06631/dxl9838/SimCenterBootcamp2020/code/c/ExerciseDay2/ex2-3/soluDu/stresstransform.h
+
+/home1/06631/dxl9838/SimCenterBootcamp2020/code/c/ExerciseDay2/ex2-3/soluDu/stresstransform.h
+
